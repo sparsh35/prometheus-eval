@@ -19,6 +19,7 @@ class VLLM:
         self.model: LLM = LLM(
             model=self.name,
             tensor_parallel_size=num_gpus,
+            quantization='awq',
             dtype=dtype,
             gpu_memory_utilization=gpu_memory_utilization,
             download_dir=download_dir,
