@@ -10,8 +10,8 @@ class VLLM:
         num_gpus: int = 1,
         download_dir: Optional[str] = None,
         dtype: str = "auto",
-        gpu_memory_utilization: int = 0.85,
-        max_model_len: int = 8192,
+        gpu_memory_utilization: int = 0.93,
+        max_model_len: int = 16384,
         **kwargs,
     ) -> None:
         self.name: str = name
